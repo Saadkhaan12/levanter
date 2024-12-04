@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_4f21b86ea22bc46f58fdda6b2fbcc9110').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -27,10 +27,10 @@ module.exports = {
           },
           logging: false,
         }),
-  PREFIX: (process.env.PREFIX || '^[.,!]').trim(),
+  PREFIX: (process.env.PREFIX || '.').trim(),
   SUDO: process.env.SUDO || '',
-  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY,
+  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,swatii
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY,HRKU-1e1c86aa-c402-410c-a426-68a6a9175e65
   BRANCH: 'master',
   STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
